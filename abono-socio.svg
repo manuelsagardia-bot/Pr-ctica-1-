@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="976" height="400" viewBox="0 0 976 400" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+
+  <defs>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2d4a"/>
+      <stop offset="55%" stop-color="#15466e"/>
+      <stop offset="100%" stop-color="#1a4d8f"/>
+    </linearGradient>
+    <linearGradient id="oro" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3c468"/>
+      <stop offset="100%" stop-color="#b9933c"/>
+    </linearGradient>
+    <clipPath id="cardA"><rect width="428" height="270" rx="16"/></clipPath>
+    <clipPath id="cardB"><rect width="428" height="270" rx="16"/></clipPath>
+    <pattern id="rayas" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <rect width="10" height="10" fill="#f0f3f6"/>
+      <rect width="5" height="10" fill="#e6ebf0"/>
+    </pattern>
+  </defs>
+
+  <rect width="976" height="400" fill="#eef1f4"/>
+
+  <text x="40" y="44" font-size="11" font-weight="600" letter-spacing="1.4" fill="#6b7785">ANVERSO</text>
+  <text x="508" y="44" font-size="11" font-weight="600" letter-spacing="1.4" fill="#6b7785">REVERSO</text>
+
+  <!-- ==================== ANVERSO ==================== -->
+  <g transform="translate(40,70)">
+    <g clip-path="url(#cardA)">
+      <rect width="428" height="270" fill="url(#navy)"/>
+      <circle cx="378" cy="240" r="120" fill="#14bac9" opacity="0.16"/>
+    </g>
+
+    <!-- logotipo -->
+    <g transform="translate(22,20)">
+      <circle cx="17" cy="17" r="15" fill="#14bac9"/>
+      <path d="M17 2a15 15 0 0 0 0 30" fill="none" stroke="#0f2d4a" stroke-width="2.2"/>
+      <path d="M6.4 6.4a15 15 0 0 0 21.2 21.2" fill="none" stroke="#0f2d4a" stroke-width="2.2"/>
+      <circle cx="12" cy="13" r="1.6" fill="#0f2d4a"/>
+      <circle cx="17" cy="19" r="1.6" fill="#0f2d4a"/>
+      <circle cx="22" cy="13" r="1.6" fill="#0f2d4a"/>
+    </g>
+    <text x="66" y="34" font-size="13" font-weight="700" letter-spacing="0.8" fill="#ffffff">CD PÁDEL MONCLOA</text>
+    <text x="66" y="47" font-size="9" letter-spacing="1.6" fill="#14bac9">CARNÉ DE SOCIO</text>
+
+    <!-- hueco de la foto -->
+    <rect x="22" y="72" width="96" height="120" rx="8" fill="#ffffff" fill-opacity="0.07"
+          stroke="#ffffff" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="6 4"/>
+    <g transform="translate(70,116)" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1.6">
+      <circle cx="0" cy="-4" r="7"/>
+      <path d="M-13 17c0-8 6-12 13-12s13 4 13 12"/>
+    </g>
+    <text x="70" y="165" font-size="8.5" letter-spacing="0.7" fill="#ffffff" fill-opacity="0.75" text-anchor="middle">FOTO</text>
+    <text x="70" y="177" font-size="8.5" letter-spacing="0.7" fill="#ffffff" fill-opacity="0.75" text-anchor="middle">35 × 45 MM</text>
+
+    <!-- datos -->
+    <text x="136" y="82" font-size="8" letter-spacing="1.3" fill="#14bac9">TITULAR</text>
+    <text x="136" y="102" font-size="17" font-weight="700" fill="#ffffff">[NOMBRE APELLIDOS]</text>
+
+    <text x="136" y="132" font-size="8" letter-spacing="1.3" fill="#14bac9">MODALIDAD</text>
+    <text x="136" y="150" font-size="14" font-weight="600" fill="#ffffff">[Abono anual]</text>
+    <text x="286" y="132" font-size="8" letter-spacing="1.3" fill="#14bac9">CATEGORÍA</text>
+    <text x="286" y="150" font-size="14" font-weight="600" fill="#ffffff">[Primera]</text>
+
+    <text x="136" y="180" font-size="8" letter-spacing="1.3" fill="#14bac9">SOCIO DESDE</text>
+    <text x="136" y="198" font-size="14" font-weight="600" fill="#ffffff">[01/2026]</text>
+    <text x="286" y="180" font-size="8" letter-spacing="1.3" fill="#14bac9">VÁLIDO HASTA</text>
+    <text x="286" y="198" font-size="14" font-weight="600" fill="#ffffff">[12/2026]</text>
+
+    <!-- pie -->
+    <text x="22" y="250" font-size="16" font-family="Consolas, Courier New, monospace" letter-spacing="2" fill="#ffffff">Nº [0042]</text>
+    <g transform="translate(368,222)">
+      <rect width="38" height="28" rx="5" fill="url(#oro)"/>
+      <path d="M0 14h38M19 0v28" stroke="#000000" stroke-opacity="0.22" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- ==================== REVERSO ==================== -->
+  <g transform="translate(508,70)">
+    <g clip-path="url(#cardB)">
+      <rect width="428" height="270" fill="#fbfcfd"/>
+      <rect y="16" width="428" height="40" fill="#0f2d4a"/>
+      <rect y="240" width="428" height="30" fill="#14bac9"/>
+    </g>
+    <rect width="428" height="270" rx="16" fill="none" stroke="#d8dee5"/>
+
+    <text x="22" y="80" font-size="8.5" font-weight="700" letter-spacing="1.3" fill="#0e8a95">CONDICIONES DE USO</text>
+
+    <g font-size="9" fill="#45505c">
+      <text x="22" y="97">•  Tarjeta personal e intransferible. Preséntala en</text>
+      <text x="32" y="109">recepción al acceder a las instalaciones.</text>
+      <text x="22" y="124">•  Incluye tres reservas semanales gratuitas de pista.</text>
+      <text x="22" y="139">•  Las reservas se abren con siete días de antelación.</text>
+      <text x="22" y="154">•  Cancelación gratuita hasta 6 horas antes del partido.</text>
+      <text x="22" y="169">•  En caso de pérdida, avisa en recepción para bloquearla.</text>
+    </g>
+
+    <!-- franja de firma -->
+    <rect x="22" y="182" width="276" height="26" rx="3" fill="url(#rayas)"/>
+    <text x="30" y="198" font-size="7.5" letter-spacing="1" fill="#8a95a1">FIRMA DEL TITULAR</text>
+
+    <!-- QR -->
+    <rect x="314" y="72" width="82" height="82" rx="6" fill="#ffffff"
+          stroke="#d8dee5" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="355" y="108" font-size="8" letter-spacing="0.8" fill="#9aa5b1" text-anchor="middle">QR</text>
+    <text x="355" y="120" font-size="8" letter-spacing="0.8" fill="#9aa5b1" text-anchor="middle">DE ACCESO</text>
+    <text x="355" y="172" font-size="10" font-family="Consolas, Courier New, monospace" letter-spacing="1" fill="#6b7785" text-anchor="middle">[0042]</text>
+
+    <!-- pie -->
+    <text x="22" y="259" font-size="9" font-weight="600" letter-spacing="0.4" fill="#06313a">padelmoncloa.es</text>
+    <text x="406" y="259" font-size="9" font-weight="600" letter-spacing="0.4" fill="#06313a" text-anchor="end">910 000 000</text>
+  </g>
+
+</svg>
