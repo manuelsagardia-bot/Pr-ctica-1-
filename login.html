@@ -1,0 +1,86 @@
+<!-- Programación de Aplicaciones Web (G247) - AF2 - Manuel Sagardia -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso de socios — CD Pádel Moncloa</title>
+</head>
+<body>
+
+    <header>
+        <p>Pádel Moncloa</p>
+        <img src="logo-padel-moncloa.svg" alt="Logotipo del CD Pádel Moncloa" width="150" height="150">
+        <h1>Acceso de socios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="inscripciones.html">Inscripciones</a></li>
+                <li><a href="competiciones.html">Competiciones</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="plantilla.html">Plantilla</a></li>
+                <li><a href="login.html">Acceso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="acceso">
+            <h2>Entra en tu área privada</h2>
+            <p>
+                Introduce los datos con los que te diste de alta. Desde el área privada
+                puedes <span title="Las reservas se abren con siete días de antelación">reservar pista</span>,
+                apuntarte a los torneos y consultar tus facturas.
+            </p>
+
+            <form>
+                <p>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </p>
+                <p>
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" minlength="8" required>
+                </p>
+                <p>
+                    <button type="submit">Acceder</button>
+                </p>
+            </form>
+        </section>
+
+        <section id="ayuda">
+            <h2>¿Problemas para entrar?</h2>
+
+            <h3>Comprobaciones</h3>
+            <ul>
+                <li>El usuario es el correo electrónico que diste al inscribirte</li>
+                <li>La contraseña debe tener al menos 8 caracteres</li>
+                <li>Las credenciales llegan por correo en las 48 horas siguientes al alta</li>
+                <li>Si no recuerdas la contraseña, pregunta en recepción con tu DNI</li>
+            </ul>
+
+            <p>
+                <em>El acceso se bloquea tras cinco intentos fallidos</em> y se
+                desbloquea automáticamente pasada una hora.
+            </p>
+
+            <p>
+                Si todavía no eres socio, empieza por la
+                <a href="inscripciones.html">página de inscripciones</a>. También puedes
+                escribirnos a <a href="mailto:info@padelmoncloa.es">info@padelmoncloa.es</a>.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Club Deportivo Pádel Moncloa. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="index.html">Volver al inicio</a></li>
+            <li><a href="https://www.padelfederacion.es/">Federación Española de Pádel</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
