@@ -1,0 +1,34 @@
+body {
+    font-family: system-ui, "Segoe UI", sans-serif;
+    color: #1a1a1a;
+}
+h2 {
+    color: #1a4d8f;
+}
+
+.marca {
+    font-weight: bold;
+    color: #14bac9;
+}
+
+#quienes-somos{
+    background: #fafafa;
+}
+
+nav a {
+    color: #1a4d8f;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    letter-spacing: -0.01em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#quienes-somos h2 {
+    color: green;
+}
+
