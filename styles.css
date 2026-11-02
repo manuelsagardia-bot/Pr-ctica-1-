@@ -123,3 +123,74 @@ footer ul {
 footer a {
     color: #1a4d8f;
 }
+
+form {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 32px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background: #fafafa;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+form input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+form input:focus {
+    outline: 2px solid #1a4d8f;
+    outline-offset: 2px;
+    border-color: #1a4d8f;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #1a4d8f;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #12386b;
+}
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 16px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    main {
+        padding: 0 16px;
+    }
+
+    form {
+        padding: 24px 20px;
+    }
+}
