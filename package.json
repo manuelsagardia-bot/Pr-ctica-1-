@@ -1,0 +1,19 @@
+{
+  "name": "practica-1-aw",
+  "version": "1.0.0",
+  "description": "API CRUD de tareas con Express",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --watch src/server.js",
+    "test": "jest"
+  },
+  "author": "Manuel Sagardia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
