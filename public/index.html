@@ -1,0 +1,138 @@
+<!-- Programación de Aplicaciones Web (G247) - Práctica 1 - Manuel Sagardia -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas — CD Pádel Moncloa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Reservas de pista</h1>
+        <p class="subtitulo">CD Pádel Moncloa · 18 pistas · 3 franjas horarias</p>
+    </header>
+
+    <main>
+
+        <!-- ===== Formulario de creacion ===== -->
+        <section id="nueva">
+            <h2>Nueva reserva</h2>
+
+            <form id="form-reserva" novalidate>
+                <p>
+                    <label for="socio">Socio</label>
+                    <input type="text" id="socio" name="socio" maxlength="80">
+                    <span class="error" id="error-socio"></span>
+                </p>
+
+                <p>
+                    <label for="pista">Pista (1-18)</label>
+                    <input type="number" id="pista" name="pista" min="1" max="18">
+                    <span class="error" id="error-pista"></span>
+                </p>
+
+                <p>
+                    <label for="duracion">Duración (minutos)</label>
+                    <input type="number" id="duracion" name="duracion" min="60" max="120">
+                    <span class="error" id="error-duracion"></span>
+                </p>
+
+                <p>
+                    <label for="franja">Franja</label>
+                    <select id="franja" name="franja">
+                        <option value="">Elige una franja</option>
+                        <option value="manana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noche">Noche</option>
+                    </select>
+                    <span class="error" id="error-franja"></span>
+                </p>
+
+                <p class="checkbox">
+                    <input type="checkbox" id="pagada" name="pagada">
+                    <label for="pagada">Pagada</label>
+                </p>
+
+                <p>
+                    <button type="submit" id="btn-guardar">Crear reserva</button>
+                    <button type="button" id="btn-cancelar" hidden>Cancelar edición</button>
+                </p>
+            </form>
+        </section>
+
+        <!-- ===== Buscador y filtros ===== -->
+        <section id="filtros">
+            <h2>Buscar y filtrar</h2>
+
+            <div class="fila-filtros">
+                <p>
+                    <label for="buscar">Buscar socio</label>
+                    <input type="search" id="buscar" placeholder="Nombre del socio">
+                </p>
+
+                <p>
+                    <label for="filtro-tipo">Tipo de pista</label>
+                    <select id="filtro-tipo">
+                        <option value="">Todas</option>
+                        <option value="interior">Interiores (1-6)</option>
+                        <option value="exterior">Exteriores (7-18)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="filtro-pagada">Estado</label>
+                    <select id="filtro-pagada">
+                        <option value="">Todas</option>
+                        <option value="true">Pagadas</option>
+                        <option value="false">Pendientes</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="orden">Ordenar por</label>
+                    <select id="orden">
+                        <option value="">Sin ordenar</option>
+                        <option value="socio-asc">Socio (A-Z)</option>
+                        <option value="socio-desc">Socio (Z-A)</option>
+                        <option value="duracion-asc">Duración (menor)</option>
+                        <option value="duracion-desc">Duración (mayor)</option>
+                    </select>
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== Listado ===== -->
+        <section id="listado">
+            <h2>Reservas</h2>
+
+            <p id="cargando" class="aviso" hidden>Cargando…</p>
+            <p id="mensaje" class="aviso" hidden></p>
+            <p id="vacio" class="aviso" hidden>No hay reservas que coincidan con la búsqueda.</p>
+
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Socio</th>
+                        <th>Pista</th>
+                        <th>Tipo</th>
+                        <th>Franja</th>
+                        <th>Duración</th>
+                        <th>Pagada</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-tabla"></tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Club Deportivo Pádel Moncloa</p>
+    </footer>
+
+</body>
+</html>
